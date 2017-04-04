@@ -8,8 +8,6 @@ Created by otger on 23/03/17.
 All rights reserved.
 """
 
-class Factory(object):
-
 
 class UpdatePID(Callback):
     name = 'udpate_pid'
