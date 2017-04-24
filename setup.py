@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 here = os.path.abspath(os.path.dirname(__file__))
 README  = open(os.path.join(here, 'README.md')).read()
 PACKAGEFULLNAME = 's_pid_controller'
-PACKAGENAME = 's_pico_tc08'
+PACKAGENAME = 's_pid_controller'
 DESCRIPTION = 'Module that implements a PID controller for an entropy system'
 LONG_DESCRIPTION = ''
 AUTHOR = 'Otger Ballester'
@@ -18,7 +18,7 @@ URL = None
 VERSION = '0.0.2'
 RELEASE = 'dev' not in VERSION
 
-print(find_packages('s_pico_tc08'))
+print(find_packages('s_pid_controller'))
 # Read the version information
 #execfile(os.path.join(here, '__init__.py'))
 setup(
@@ -40,7 +40,7 @@ setup(
                    "Development Status :: 4 - Beta",
                    "Programming Language :: Python",
                   ],
-      #ata=True,
+      include_package_data=True,
       packages=find_packages()
     #zip_safe=True,
 )
